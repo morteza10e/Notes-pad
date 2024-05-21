@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.NoteBook" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!--  Status bar color  -->
+        <item name="android:statusBarColor">#ACA3A3</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!--  navigation brand color   -->
+        <!--  <item name="android:navigationBarColor">#00C853</item>   -->
+
+        <!--   Primary brand color  -->
+        <!--  <item name="colorPrimary">#FFFFFF</item>   -->
+
+        <!-- Customize your Splash Screen Here -->
+    </style>
+
+
+
+    <style name="for_fab" parent="">
+        <item name="cornerSize">20%</item>
+    </style>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="90dp"
+            tools:listitem="@layout/item_home" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:fabCustomSize="75dp"
+            app:maxImageSize = "63dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#FFAB00"
+            android:layout_gravity="start|bottom"
+            app:shapeAppearanceOverlay="@style/for_fab"
+            android:src="@drawable/baseline_add" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/RecycleBin"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:fabCustomSize="75dp"
+            app:maxImageSize = "60dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            app:shapeAppearanceOverlay="@style/for_fab"
+            android:backgroundTint="#FFAB00"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/baseline_delete_outline_24"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/emptyback"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+
+
+</LinearLayout>

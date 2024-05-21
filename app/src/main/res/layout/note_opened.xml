@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".note_opened_page.NoteOpenedActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:autofillHints="password"
+            android:background="@drawable/border"
+            android:hint="@string/title"
+            android:padding="12dp"
+            android:textColorHint="#999999"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/border"
+            android:gravity="start|top"
+            android:hint="چیزی بنویسید\n\n\n"
+            android:padding="12dp"
+            android:textColorHint="#999999" />
+    </LinearLayout>
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSave"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:fabCustomSize="75dp"
+        app:maxImageSize = "43dp"
+        app:shapeAppearanceOverlay="@style/for_fab"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#FFAB00"
+        android:layout_gravity="start|bottom"
+        android:src="@drawable/baseline_done_outline_24" />
+
+
+</FrameLayout>
